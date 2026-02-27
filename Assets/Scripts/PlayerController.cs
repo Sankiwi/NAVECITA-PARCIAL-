@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other) { if (other.CompareTag("Meteor")) Die(); }
-    private void OnTriggerEnter2D(Collider2D other) { if (other.CompareTag("Meteor")) Die(); }
+    private void OnTriggerEnter(Collider other) { if (other.CompareTag("Fireball")) Die(); }
+    private void OnTriggerEnter2D(Collider2D other) { if (other.CompareTag("Fireball")) Die(); }
     void Die() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 }
